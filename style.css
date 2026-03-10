@@ -5,6 +5,9 @@
   --color-foreground: hsl(240, 21%, 20%);
 
   --color-primary: hsl(192, 37%, 48%);
+  --color-primary-hover: hsl(192, 54%, 64%);
+  --color-secondary-hover: hsl(268, 55%, 71%);
+
   --color-primary-foreground: white;
   --color-secondary: hsl(268, 34%, 53%);
 
@@ -42,8 +45,16 @@ body {
   width: auto;
 }
 
+.button:hover {
+  background: var(--color-primary-hover);
+}
+
 .button[data-variant="secondary"] {
   background: var(--color-secondary);
+}
+
+.button[data-variant="secondary"]:hover {
+  background: var(--color-secondary-hover);
 }
 
 .sr-only {
@@ -63,6 +74,10 @@ body {
 img {
   max-inline-size: 100%;
   block-size: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
