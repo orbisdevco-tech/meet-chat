@@ -89,7 +89,7 @@ header {
 }
 
 .hero {
-  padding: 5rem 4rem;
+  padding: 5rem 0rem;
   position: relative;
   display: grid;
   align-items: center;
@@ -97,16 +97,15 @@ header {
   grid-template-areas: "illustration_left content illustration_right";
   max-width: 100vw;
   overflow: hidden;
+  gap: 4rem;
 }
 
 .hero_illustration_left {
   grid-area: illustration_left;
   justify-self: start;
-  transform: translateX(-5rem);
 }
 
 .hero_illustration_right {
-  transform: translateX(5rem);
   justify-self: end;
   grid-area: illustration_right;
 }
@@ -278,6 +277,7 @@ footer::before {
     grid-template-areas:
       "illustration_left illustration_right"
       "content content";
+    gap: 2rem;
   }
 
   .hero_illustration_left {
